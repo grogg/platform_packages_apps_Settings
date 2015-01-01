@@ -6058,6 +6058,6 @@
     <string name="show_unac_and_overcounted_stats_summary">Show in battery statistics unaccounted and over-counted usage</string>
 
    <!-- Firmware build date -->
-   <string name="build_date">Grogg\'s version</string>
+   <string name="build_date">Build date</string>
    <string name="build_date_default">2014-01-01-0000</string>
 </resources>
