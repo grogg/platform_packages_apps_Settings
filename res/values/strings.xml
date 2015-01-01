@@ -6060,4 +6060,8 @@
    <!-- App Ops -->
    <string name="app_ops_title">App Ops</string>
    <string name="app_ops_summary">Fine-grained application permission controls</string>
+
+   <!-- Firmware build date -->
+   <string name="build_date">Grogg\'s version</string>
+   <string name="build_date_default">2014-01-01-0000</string>
 </resources>
