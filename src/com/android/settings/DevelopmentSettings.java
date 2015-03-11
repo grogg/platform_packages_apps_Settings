@@ -182,7 +182,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private boolean mHaveDebugSettings;
     private boolean mDontPokeProperties;
 
-    private CheckBoxPreference mShowUnacAndOvercounted;
+    private SwitchPreference mShowUnacAndOvercounted;
     private SwitchPreference mEnableAdb;
     private Preference mClearAdbKeys;
     private SwitchPreference mEnableTerminal;
@@ -270,7 +270,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.development_prefs);
 
-        mShowUnacAndOvercounted = findAndInitCheckboxPref(SHOW_UNAC_AND_OVERCOUNTED_STATS);
+        mShowUnacAndOvercounted = findAndInitSwitchPref(SHOW_UNAC_AND_OVERCOUNTED_STATS);
 
         final PreferenceGroup debugDebuggingCategory = (PreferenceGroup)
                 findPreference(DEBUG_DEBUGGING_CATEGORY_KEY);
@@ -572,7 +572,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateAllOptions();
         mDontPokeProperties = false;
         pokeSystemProperties();
-        mShowUnacAndOvercounted.setChecked(false);
+        mShowUnacAndOvercounted = false;
     }
 
     private void updateHdcpValues() {
